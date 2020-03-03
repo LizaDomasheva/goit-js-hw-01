@@ -20,46 +20,47 @@ let message;
 
 
 if (countryName === null) {
-    alert('Очень жаль, приходите ещё');
+    message='Очень жаль, приходите ещё';
 } else {
     country = countryName.toLowerCase();
+    switch (country) {
+        case 'китай':
+            cost = 100;
+            country = country[0].toUpperCase() + country.substring(1);
+            message = `Доставка в ${country} будет стоить ${cost} кредитов`;
+            break;
+    
+        case 'чили':
+            cost = 250;
+            country = country[0].toUpperCase() + country.substring(1);
+            message = `Доставка в ${country} будет стоить ${cost} кредитов`;
+            break;
+    
+        case 'австралия':
+            cost = 170;
+            country = country[0].toUpperCase() + country.substring(1);
+            message = `Доставка в ${country} будет стоить ${cost} кредитов`;
+            break;
+    
+        case 'индия':
+            cost = 80;
+            country = country[0].toUpperCase() + country.substring(1);
+            message = `Доставка в ${country} будет стоить ${cost} кредитов`;
+            break;
+    
+        case 'ямайка':
+            cost = 120;
+            country = country[0].toUpperCase() + country.substring(1);
+            message = `Доставка в ${country} будет стоить ${cost} кредитов`;
+            break;
+    
+        default:
+            message = 'В вашей стране доставка не доступна';
+    
+    }
 }
 
 
-switch (country) {
-    case 'китай':
-        cost = 100;
-        country = country[0].toUpperCase() + country.substring(1);
-        message = `Доставка в ${country} будет стоить ${cost} кредитов`;
-        break;
 
-    case 'чили':
-        cost = 250;
-        country = country[0].toUpperCase() + country.substring(1);
-        message = `Доставка в ${country} будет стоить ${cost} кредитов`;
-        break;
-
-    case 'австралия':
-        cost = 170;
-        country = country[0].toUpperCase() + country.substring(1);
-        message = `Доставка в ${country} будет стоить ${cost} кредитов`;
-        break;
-
-    case 'индия':
-        cost = 80;
-        country = country[0].toUpperCase() + country.substring(1);
-        message = `Доставка в ${country} будет стоить ${cost} кредитов`;
-        break;
-
-    case 'ямайка':
-        cost = 120;
-        country = country[0].toUpperCase() + country.substring(1);
-        message = `Доставка в ${country} будет стоить ${cost} кредитов`;
-        break;
-
-    default:
-        message = 'В вашей стране доставка не доступна';
-
-}
 
 alert(message);
