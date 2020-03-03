@@ -18,8 +18,6 @@ const pricePerDroid = 3000;
 
 const numberOfDroid = prompt("Сколько дроидов желаете приобрести?");
 
-let message;
-
 let totalPrice;
 
 let creditsBalance;
