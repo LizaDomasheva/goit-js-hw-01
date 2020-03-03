@@ -14,7 +14,7 @@
 
 'use strict';
 const countryName = prompt("В какую страну хотите доставить товар?");
-let country;
+const country;
 let cost;
 let message;
 
