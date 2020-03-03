@@ -39,4 +39,3 @@ if (numberOfDroid === null) {
         alert(`Вы купили ${numberOfDroid} дроидов, на счету осталось ${creditsBalance} кредитов.`);
     }
 }
-

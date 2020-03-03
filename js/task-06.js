@@ -9,24 +9,21 @@
 // let total = 0;
 
 'use strict';
-let input; 
+let input;
 let total = 0;
 
 
-do
-{
+do {
     input = prompt("Пожалуйста, введите число");
-   if (input===null){
-       break;
-   }
-   if (Number.isNaN(Number(input))) {
-    alert("Необходимо ввести число");
-    }else{
+    if (input === null) {
+        break;
+    }
+    if (Number.isNaN(Number(input))) {
+        alert("Необходимо ввести число");
+    } else {
         total += (Number(input));
     }
 
-} while(input!==null)
+} while (input !== null)
 
-    alert(`Общая сумма чисел равна ${total}`);
-
-
+alert(`Общая сумма чисел равна ${total}`);
